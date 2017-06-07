@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('selector' , 'SelectorController@index');
+
+Route::post('selector/getBooks', 'SelectorController@getBooks');
